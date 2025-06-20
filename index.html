@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800">
+    <!-- Announcement -->
+    <div class="flex items-center justify-between border-b border-gray-200 bg-gray-100 px-4 py-2 text-gray-900">
+        <span></span>
+
+        <p class="text-center font-medium">
+            Tidak semua orang butuh dua ginjal. Buktikan hari ini.
+            <a href="#" class="inline-block underline"> Ambil Kesempatanmu →</a>
+        </p>
+
+        <button type="button" aria-label="Dismiss"
+            class="rounded border border-gray-300 bg-white p-1.5 shadow-sm transition-colors hover:bg-gray-50">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+    <!-- END Announcement -->
+
+    <!-- Navbar -->
+    <header class="bg-white dark:bg-gray-900">
+        <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+            <a class="block text-teal-600 dark:text-teal-300" href="#">
+                <span class="sr-only">Home</span>
+                <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+                        fill="currentColor" />
+                </svg>
+            </a>
+
+            <div class="flex flex-1 items-center justify-end md:justify-between">
+                <nav aria-label="Global" class="hidden md:block">
+                    <ul class="flex items-center gap-6 text-sm">
+                        <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="#">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="#">
+                                products
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="#">
+                                testimonials
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                href="#">
+                                sell to us
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <div class="sm:flex sm:gap-4">
+                        <a class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500"
+                            href="#">
+                            Login
+                        </a>
+
+                        <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                            href="#">
+                            Register
+                        </a>
+                    </div>
+
+                    <button type="button"
+                        class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden dark:bg-gray-800 dark:text-white dark:hover:text-white/75">
+                        <span class="sr-only">Toggle menu</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END navbar -->
+
+    <!-- cta -->
+    <section class="bg-white dark:bg-gray-900 lg:h-screen lg:grid lg:place-items-start">
+        <div
+            class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:px-8 lg:py-32">
+            <!-- TEXT SECTION -->
+
+            <div class="max-w-prose">
+                <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white">
+                    Solusi praktis untuk finansial krisis:
+                    <strong class="text-indigo-600">monetisasi organ anda</strong> hari ini
+                </h1>
+
+                <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed dark:text-gray-200">
+                    Organ Anda berharga!! jangan biarkan ia menganggur di tubuh Anda. Hanya dengan satu ginjal, Anda
+                    bisa Bantu sesama... atau lunasi cicilan Alphard. Pilihan di tangan Anda. Kami hanya perantara.
+                </p>
+
+                <div class="mt-4 flex gap-4 sm:mt-6">
+                    <a class="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
+                        href="#">
+                        Jual Sekarang
+                    </a>
+
+                    <a class="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
+                        href="#">
+                        Pelajari Risiko
+                    </a>
+                </div>
+            </div>
+
+            <!-- IMAGE SECTION -->
+            <!-- IMAGE SECTION -->
+            <div class="lg:flex lg:justify-end -mt-[7em] ml-[9em] lg:-mt-[8em] lg:ml-[0]">
+                <img src="./main.gif" alt="Organ Ilustrasi"
+                    class="w-full max-w-sm rounded-lg lg:w-[500px] lg:max-w-none">
+            </div>
+
+        </div>
+    </section>
+    <!-- End cta -->
+
+    <!-- product list detailed-->
+    <section class="bg-white dark:bg-gray-900 sm:py-8">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl"> Organ yang Saat Ini Bisa Kami
+                Terima
+            </h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+                Jangan biarkan organ Anda nganggur tanpa cuan. Berikut daftar organ yang bisa Anda jual kepada kami hari
+                ini. Harga fluktuatif, tergantung kualitas, usia, dan tingkat keputusasaan Anda.
+            </p>
+
+            <!-- Swiper container -->
+            <div class="swiper mySwiper mt-4 overflow-x-hidden">
+                <div class="mb-6 flex justify-end">
+                    <div class="relative">
+                        <label for="priceFilter" class="sr-only">Filter Harga</label>
+                        <select id="priceFilter"
+                            class="appearance-none w-48 rounded-md bg-gray-100 dark:bg-gray-700 px-4 py-2 pr-10 text-sm text-gray-900 dark:text-gray-100 shadow-md transition duration-150 ease-in-out focus:outline-none focus:ring-0 focus:border-none">
+                            <option value="all">Semua</option>
+                            <option value="low">Di bawah Rp 100 juta</option>
+                            <option value="mid">Rp 100–250 juta</option>
+                            <option value="high">Di atas Rp 250 juta</option>
+                        </select>
+                        <!-- Dropdown Icon -->
+                        <div
+                            class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-400 dark:text-gray-300">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper wrapper -->
+                <div class="swiper-wrapper" id="productList">
+
+                    <!-- Cards akan di-generate di sini -->
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ENd product list -->
+
+    <!-- Product -->
+    <section class="bg-white dark:bg-gray-900 py-8">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">Produk Kami</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+                Kami menyediakan berbagai organ berkualitas tinggi yang siap untuk dijual. Setiap organ telah melalui
+                proses seleksi ketat untuk memastikan kualitas dan keamanan.
+            </p>
+         <div id="gridProductWrapper" class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+</div>
+        </div>
+    </section>
+    <!-- end Product -->
+    <!-- testimoni-->
+
+    <!-- End Testimoni -->
+
+    <!-- foother -->
+    <footer class="bg-gray-100 dark:bg-gray-800 py-8">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+                <p class="text-sm text-gray-500 dark:text-gray-400">© 2023 SansStore. All rights reserved.</p>
+                <ul class="flex items-center gap-4 text-sm">
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                            href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                            href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                            href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Foother -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        let swiper; // Di atas semua
+
+        let products = [{
+            name: 'Ginjal (Kiri/kanan)',
+            description: ' untuk Anda yang ingin tetap hidup tapi punya cicilan. Clean, bebas batu ginjal? Harga naik!',
+            image: '/assets/organs/Ginjal.png',
+            price: '180Jt - Rp320Jt',
+            minPrice: 180000000
+        }, {
+            name: 'Paru-Paru (Satuan)',
+            description: 'Kami terima satu dulu. Asal bukan bekas perokok aktif. Wajib CO test!',
+            image: '/assets/organs/Paru.png',
+            price: '150Jt',
+            minPrice: 150000000
+        }, {
+            name: 'Mata (Per biji)',
+            description: 'Bisa kirim satu, masih bisa lihat tagihan listrik. Bonus kalau minusnya kecil.',
+            image: '/assets/organs/Mata.png',
+            price: '80Jt',
+            minPrice: 80000000
+        }, {
+            name: 'Hati (Liver)',
+            description: 'Tidak cocok untuk orang yang sering nahan emosi. Tapi kami terima separuhnya kok.',
+            image: '/assets/organs/Hati.png',
+            price: '250Jt',
+            minPrice: 250000000
+        }, {
+            name: 'Tulang Sumsum',
+            description: 'Masih kuat kerja WFH? Tulang sumsum kamu bisa bantu orang lain hidup lohh.',
+            image: '/assets/organs/Tulang.png',
+            price: '60Jt',
+            minPrice: 60000000
+        }, {
+            name: 'Telinga (Per pasang)',
+            description: 'Bosen denger tuntutan ortu? jual saja pada kami ("1 telinga = bisa kebeli 2 iphone lohh").',
+            image: '/assets/organs/Telinga.png',
+            price: '40Jt per pasang',
+            minPrice: 40000000
+        }, {
+            name: 'Tangan (Satuan)',
+            description: 'Punya tangan gak kepake? Jual aja pada kami. Kami tampung semua, dari yang lembut sampai yang penuh sasanggaleun.',
+            image: '/assets/organs/Tangan.png',
+            price: '150Jt',
+            minPrice: 150000000
+        }, {
+            name: 'Kaki (Lengkap Sampai Lutut)',
+            description: 'Punya kaki nganggur? Jual ke kami! Bisa jadi investasi untuk orang lain yang pengen nyoba jalan.',
+            image: '/assets/organs/Kaki.png',
+            price: '200Jt',
+            minPrice: 200000000
+        }, {
+            name: 'Kepala (Utuh)',
+            description: 'Punya kepala penuh overthinking? Kami terima. Bonus nilai plus kalau isinya masih utuh.',
+            image: '/assets/organs/Kepala.png',
+            price: '2M',
+            minPrice: 2000000000
+        }, {
+            name: 'Badan (Tanpa Kepala & Ekstremitas)',
+            description: 'Badan gak kepake? Kirim aja ke kami. Bisa jadi boneka terapi, bisa juga dummy pelatihan medis.',
+            image: '/assets/organs/Badan.png',
+            price: '1.5M',
+            minPrice: 1500000000
+        }, {
+            name: 'Penis (Satuan)',
+            description: 'Merasa udah gak butuh? Mau hidup lebih fokus dan damai? Lepaskan. Kami beli. Tanpa tanya alasan, tanpa judging.',
+            image: '/assets/organs/Penis.png',
+            price: '350Jt',
+            minPrice: 350000000
+        }, {
+            name: 'Testis (Per buah)p',
+            description: 'Jantan sejati bukan soal punya dua. Satu cukup, satu lagi bisa dijual. Kami tampung dengan hangat (dan steril).',
+            image: '/assets/organs/Testis.png',
+            price: '120Jt',
+            minPrice: 120000000
+        }, {
+            name: 'Payudara (Pasang/Kiri/Kanan)',
+            description: 'Estetika itu relatif. Kalau punya lebih dan pengen berbagi atau pindah haluan, kami siap beli. Simetris = bonus harga!',
+            image: '/assets/organs/Payudara.png',
+            price: '180Jt per pasang',
+            minPrice: 180000000
+        }];
+
+
+        products.forEach(product => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide';
+slide.innerHTML = `
+<div class="swiper-slide h-full">
+  <div class="flex flex-col h-full rounded-md overflow-hidden border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm transition hover:shadow-md">
+    <div class="h-40 sm:h-48 w-full overflow-hidden">
+      <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover" />
+    </div>
+    <div class="flex flex-col flex-grow p-3">
+      <h3 class="text-sm font-semibold text-gray-800 dark:text-white truncate">
+        ${product.name}
+      </h3>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300 line-clamp-2">${product.description}</p>
+      <div class="mt-2 text-base font-bold text-rose-600 dark:text-rose-400">Rp ${product.price.toLocaleString()}</div>
+
+      <!-- Spacer agar tombol selalu di bawah -->
+      <div class="flex-grow"></div>
+
+      <a href="#"
+         class="mt-3 inline-block w-full rounded-md bg-teal-600 py-2 text-center text-sm font-semibold text-white transition hover:bg-teal-700 dark:hover:bg-teal-500">
+         See Details
+      </a>
+    </div>
+  </div>
+</div>
+`;
+            productList.appendChild(slide);
+        });
+
+
+        function renderProducts(filtered = products) {
+            productList.innerHTML = ''; // kosongkan dulu
+            filtered.forEach(product => {
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+slide.innerHTML = `
+<div class="swiper-slide h-full">
+  <div class="flex flex-col h-full rounded-md overflow-hidden border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm transition hover:shadow-md">
+    <div class="h-40 sm:h-48 w-full overflow-hidden">
+      <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover" />
+    </div>
+    <div class="flex flex-col flex-grow p-3">
+      <h3 class="text-sm font-semibold text-gray-800 dark:text-white truncate">
+        ${product.name}
+      </h3>
+      <p class="mt-1 text-sm text-gray-600 dark:text-gray-300 line-clamp-2">${product.description}</p>
+      <div class="mt-2 text-base font-bold text-rose-600 dark:text-rose-400">Rp ${product.price.toLocaleString()}</div>
+
+      <!-- Spacer agar tombol selalu di bawah -->
+      <div class="flex-grow"></div>
+
+      <a href="#"
+         class="mt-3 inline-block w-full rounded-md bg-teal-600 py-2 text-center text-sm font-semibold text-white transition hover:bg-teal-700 dark:hover:bg-teal-500">
+         See Details
+      </a>
+    </div>
+  </div>
+</div>
+
+`;
+                productList.appendChild(slide);
+            });
+                initSwiper();
+
+        }
+
+        // Filter products based on selected price range
+        const filterSelect = document.getElementById('priceFilter');
+
+filterSelect.addEventListener('change', () => {
+    const value = filterSelect.value;
+    let filteredProducts = products;
+
+    if (value === 'low') {
+        filteredProducts = products.filter(p => p.minPrice < 100000000);
+    } else if (value === 'mid') {
+        filteredProducts = products.filter(p => p.minPrice >= 100000000 && p.minPrice <= 250000000);
+    } else if (value === 'high') {
+        filteredProducts = products.filter(p => p.minPrice > 250000000);
+    }
+
+    renderProducts(filteredProducts); // ini otomatis juga inisialisasi ulang swiper
+});
+
+        renderProducts(); // render semua saat halaman dimuat
+
+        // Example JavaScript to handle the announcement dismissal
+        const dismissButton = document.querySelector('button[aria-label="Dismiss"]');
+        dismissButton.addEventListener('click', () => {
+            const announcement = dismissButton.closest('.flex');
+            announcement.style.display = 'none';
+        });
+        // Example JavaScript to handle the mobile menu toggle
+        const mobileMenuButton = document.querySelector('button[aria-label="Toggle menu"]');
+        mobileMenuButton.addEventListener('click', () => {
+            const nav = document.querySelector('nav[aria-label="Global"]');
+            nav.classList.toggle('hidden');
+        });
+
+
+function initSwiper() {
+    if (swiper) swiper.destroy(true, true); // destroy previous instance
+    swiper = new Swiper('.mySwiper', {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: false, // non-loop biar gak error pas filter < 6
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2.2,
+            },
+            480: {
+                slidesPerView: 2.5,
+            },
+            640: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            1024: {
+                slidesPerView: 5,
+            },
+        },
+    });
+}
+    </script>
+    <script>
+const productsSell = [
+  {
+    name: "Ginjal Kiloan, Kebersihan Gacha",
+    image: "/assets/RealOrgan/GinjalKiloan.webp",
+    description: "Stok terbatas · Siap Kirim",
+    price: 58000000,
+    stock: 120,
+    url: "#"
+  },
+  {
+    name: "Organ Ginjal Super Steril",
+    image: "/assets/RealOrgan/ginjal.jfif",
+    description: "Ready stock · Aman dan steril",
+    price:200000000,
+    stock: 8,
+    url: "#"
+  },
+  {
+    name: "Paru Paru Segar Pak Ahmad",
+    image: "/assets/RealOrgan/Paruparu.webp",
+    description: "Ready to ship · Kondisi mantap",
+    price: 270000000,
+    stock: 2,
+    url: "#"
+  },
+  {
+        name: "Otak tabung usia 18 tahun",
+        image: "/assets/RealOrgan/OtakPakMamat.jpg",
+        description: "Ready to ship · Kondisi mantap",
+        price: 500000000,
+        stock: 1,
+        url: "#"
+    },
+    {
+        name: "Otak segar orang pintar",
+        image: "/assets/RealOrgan/OtakSegarPintar.jpg",
+        description: "Ready to ship · Kondisi mantap",
+        price: 1500000000,
+        stock: 1,
+        url: "#"
+    },
+    {
+        name: "Otak segar bekas Pak Rizki",
+        image: "/assets/RealOrgan/OtakPakRizki.webp",
+        description: "Ready to ship · Kondisi mantap",
+        price: 800000000,
+        stock: 1,
+        url: "#"
+    },
+    {
+        name: "Otak kiloan random kondisi",
+        image: "/assets/RealOrgan/OtakKiloan.jpg",
+        description: "Ready to ship · Kondisi mantap",
+        price: 300000000,
+        stock: 1,
+        url: "#"
+    },
+    {
+        name: "bola mata jernih grade B",
+        image: "/assets/RealOrgan/mata.jpg",
+        description: "Ready to ship · Kondisi mantap",
+        price: 137000000,
+        stock: 2,
+        url: "#"
+    },
+    {
+        name: "bola mata biru langka",
+        image: "/assets/RealOrgan/matabiru.jpg",
+        description: "Ready to ship · Kondisi mantap",
+        price: 300000000,
+        stock: 8,
+        url: "#"
+    },
+    {
+        name: "bola mata coklat bersih",
+        image: "/assets/RealOrgan/matacoklat.jpg",
+        description: "Ready to ship · Kondisi mantap",
+        price: 264000000,
+        stock: 2,
+        url: "#"
+    },
+    {
+        name: "bola mata random kondisi",
+        image: "/assets/RealOrgan/mataRandom.jfif",
+        description: "Ready to ship · Kondisi mantap",
+        price: 95000000,
+        stock: 1,
+        url: "#"
+    },
+];
+
+function renderStaticGrid(productArray) {
+  const container = document.getElementById("gridProductWrapper");
+  container.innerHTML = ''; // Kosongkan dulu
+
+  productArray.forEach(product => {
+    const card = document.createElement('div');
+    card.className = "rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition hover:shadow-md dark:border-gray-700 dark:bg-gray-800";
+
+    card.innerHTML = `
+  <a href="${product.url}" class="block overflow-hidden rounded">
+    <img src="${product.image}" alt="Product Image"
+        class="h-48 w-full object-cover transition duration-300 hover:scale-105" />
+  </a>
+  <div class="mt-4">
+      <p class="mt-1 text-xs font-medium ${
+      product.stock > 5
+        ? 'text-gray-500 dark:text-gray-400'
+        : product.stock > 0
+        ? 'text-orange-500'
+        : 'text-red-600'
+    }">
+      ${
+        product.stock > 0
+          ? `Stok: ${product.stock} pcs`
+          : '❌ Stok Habis'
+      }
+    </p>
+    <h3 class="text-sm font-semibold text-gray-900 dark:text-white line-clamp-2 text-ellipsis">${product.name}</h3>
+    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">${product.description}</p>
+  
+  </div>
+<div class="mt-1 md:mt-3 flex flex-col items-start gap-2 md:flex-row md:items-center md:justify-between">
+  <p class="text-base font-bold text-emerald-600 dark:text-emerald-400">
+    Rp ${product.price.toLocaleString()}
+  </p>
+  <a href="${product.url}"
+    class="w-full md:w-auto text-center text-sm font-medium text-white bg-teal-600 px-4 py-1.5 rounded hover:bg-teal-700 dark:hover:bg-teal-500 transition ${product.stock === 0 ? 'pointer-events-none opacity-50' : ''}">
+    Lihat Detail
+  </a>
+</div>
+
+`;
+
+
+    container.appendChild(card);
+  });
+}
+
+// Jalankan saat halaman load
+renderStaticGrid(productsSell);
+
+    </script>
+</body>
+
+</html>
